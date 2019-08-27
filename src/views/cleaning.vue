@@ -19,9 +19,15 @@
               <v-select v-model="value" :items="user" chips label="รายชื่อ" multiple outlined></v-select>
             </v-col>
 
-            <v-col cols="12" md="6">
-              <v-text-field label="ผู้ดูแล" outlined></v-text-field>
+            <v-col cols="12" sm="6">
+              <v-textarea
+                outlined
+                name=""
+                label="หน้าที่รับผิดชอบ"
+                value=""
+              ></v-textarea>
             </v-col>
+
           </v-row>
 
           <div class="text-center">
@@ -29,6 +35,7 @@
               <v-icon left>done</v-icon>บันทึก
             </v-btn>
           </div>
+          <br>
         </v-container>
       </v-card>
     </v-container>
@@ -62,7 +69,17 @@ export default {
     return {
       day: ["จันทร์", "อังคาร", "พุธ", "พฤหัสบดี", "ศุกร์"],
       typetime: ["เช้า", "บ่าย", "เย็น"],
-      user: ["นาย A","นาย B","นาย C","นาย D","นาย E","นาย F","นาย G","นาย H","นาย I","นาย J"
+      user: [
+        "นาย A",
+        "นาย B",
+        "นาย C",
+        "นาย D",
+        "นาย E",
+        "นาย F",
+        "นาย G",
+        "นาย H",
+        "นาย I",
+        "นาย J"
       ],
       search: "",
       headers: [
@@ -72,40 +89,34 @@ export default {
           value: "name"
         },
         { text: "วัน", value: "days" },
-        { text: "ช่วงเวลา", value: "typetime" },
-        { text: "ผู้ดูแล", value: "staff" }
+        { text: "ช่วงเวลา", value: "typetime" }
       ],
 
       desserts: [
         {
           name: "นาย A",
           days: "วันจันทร์",
-          typetime: "เช้า",
-          staff: "Admin A"
+          typetime: "เช้า"
         },
         {
           name: "นาย B",
           days: "วันอังคาร",
-          typetime: "บ่าย",
-          staff: "Admin B"
+          typetime: "บ่าย"
         },
         {
           name: "นาย C",
           days: "วันพุธ",
-          typetime: "เช้า",
-          staff: "Admin C"
+          typetime: "เช้า"
         },
         {
           name: "นาย D",
           days: "วันพฤหัส",
-          typetime: "เย็น",
-          staff: "Admin D"
+          typetime: "เย็น"
         },
         {
           name: "นาย E",
           days: "วันศุกร์",
-          typetime: "บ่าย",
-          staff: "Admin E"
+          typetime: "บ่าย"
         }
       ]
     };

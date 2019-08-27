@@ -19,7 +19,8 @@
           <v-avatar size="150">
             <img src="https://f.ptcdn.info/575/053/000/ow5utonifPJas6jmUI2-o.jpg" alt />
           </v-avatar>
-          <p class="title white--text subheading mt-2">COMPUTER CLUB</p>
+          <h1 class="title white--text title mt-2 font-weight-light">นายรักดี รักเรียน</h1>
+          <h1 class="title white--text headline ">COMPUTER CLUB</h1>
         </v-flex>
       </v-layout>
 
