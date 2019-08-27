@@ -19,14 +19,12 @@
               <v-select v-model="value" :items="user" chips label="รายชื่อ" multiple outlined></v-select>
             </v-col>
 
-            <v-col cols="12" sm="6">
-              <v-textarea
-                outlined
-                name=""
-                label="หน้าที่รับผิดชอบ"
-                value=""
-              ></v-textarea>
-            </v-col>
+        <v-col cols="12" sm="6" md="6">
+          <v-text-field
+            label="หมายเหตุ"
+            outlined
+          ></v-text-field>
+        </v-col>
 
           </v-row>
 
