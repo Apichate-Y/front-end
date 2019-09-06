@@ -19,21 +19,16 @@
               <v-select v-model="value" :items="user" chips label="รายชื่อ" multiple outlined></v-select>
             </v-col>
 
-        <v-col cols="12" sm="6" md="6">
-          <v-text-field
-            label="หมายเหตุ"
-            outlined
-          ></v-text-field>
-        </v-col>
-
+            <v-col cols="12" sm="6" md="6">
+              <v-text-field label="หมายเหตุ" outlined></v-text-field>
+            </v-col>
           </v-row>
 
           <div class="text-center">
-            <v-btn class="title" color="primary">
+            <v-btn class="title" color="primary" min-width="110" min-height="40">
               <v-icon left>done</v-icon>บันทึก
             </v-btn>
           </div>
-          <br>
         </v-container>
       </v-card>
     </v-container>
