@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-content>
-      <NavigationBar />
+      <NavBar></NavBar>
       <div class="mx-4">
       <router-view></router-view>
       </div>
@@ -10,15 +10,11 @@
 </template>
 
 <script>
-import NavigationBar from "./components/NavigationBar";
-
+import NavBar from "./components/NavBar";
 export default {
   name: "App",
   components: {
-    NavigationBar
-  },
-  data: () => ({
-    //
-  })
+    NavBar
+  }
 };
 </script>
