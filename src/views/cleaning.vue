@@ -43,8 +43,6 @@
                 item-value="id"
                 :rules="[(v) => !!v || 'โปรดเลือกรหัสนักศึกษา']"
                 required
-                chips
-                multiple
                 outlined
               ></v-select>
             </v-col>
@@ -113,7 +111,7 @@ export default {
       },
       headers: [
         {
-          text: "ID",
+          text: "รหัสนักศึกษา",
           align: "left",
           sortable: false,
           value: "clubMember.user"
@@ -167,6 +165,7 @@ export default {
         .catch(e => {
           console.log(e);
         });
+
     },
     // function เมื่อกดปุ่ม บันทึก
     saveCleanUp() {
